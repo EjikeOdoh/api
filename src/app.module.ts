@@ -10,6 +10,7 @@ import { AddressModule } from './address/address.module';
 import { ReviewsModule } from './reviews/reviews.module';
 import { PaymentModule } from './payment/payment.module';
 import { BookingsModule } from './bookings/bookings.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { BookingsModule } from './bookings/bookings.module';
     ReviewsModule,
     PaymentModule,
     BookingsModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

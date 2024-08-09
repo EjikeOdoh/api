@@ -22,5 +22,6 @@ import { Booking } from 'src/bookings/entities/booking.entity';
   ],
   controllers: [UsersController],
   providers: [UsersService],
+  exports: [UsersService],
 })
 export class UsersModule {}

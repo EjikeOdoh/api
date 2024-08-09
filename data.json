@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "name": "Routine Maintenance",
+    "icon": "RM",
+    "desc": "Routine maintenance is essential to keep your vehicle running smoothly and to prevent major repairs. Our service includes oil changes, tire rotations, brake inspections, and fluid checks to ensure your car is in top condition.",
+    "cost": "75.00",
+    "images": [
+      {
+        "id": 1,
+        "url": "https://images.pexels.com/photos/6025084/pexels-photo-6025084.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Oil Change"
+      },
+      {
+        "id": 2,
+        "url": "https://images.pexels.com/photos/3806248/pexels-photo-3806248.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Tire Rotation"
+      },
+      {
+        "id": 3,
+        "url": "https://images.pexels.com/photos/4489740/pexels-photo-4489740.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Brake Inspection"
+      },
+      {
+        "id": 4,
+        "url": "https://images.pexels.com/photos/4489740/pexels-photo-4489740.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Fluid Check"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Computer Diagnosis",
+    "icon": "CD",
+    "desc": "Mobile Mechanix offers top-notch automobile computer diagnostics, a crucial service for modern vehicles. Using advanced diagnostic tools and software, our skilled technicians connect to your car's onboard computer system to retrieve error codes, monitor sensor readings, and conduct comprehensive system evaluations.",
+    "cost": "100.00",
+    "images": [
+      {
+        "id": 5,
+        "url": "https://images.pexels.com/photos/5540074/pexels-photo-5540074.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Ferrari Brakes"
+      },
+      {
+        "id": 6,
+        "url": "https://images.pexels.com/photos/4243617/pexels-photo-4243617.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Opened Engine Bay"
+      },
+      {
+        "id": 7,
+        "url": "https://images.pexels.com/photos/5303537/pexels-photo-5303537.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Displayed Engine"
+      },
+      {
+        "id": 8,
+        "url": "https://images.pexels.com/photos/1125475/pexels-photo-1125475.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "A Park of Mercedes Benz"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Electrical Repairs",
+    "icon": "ER",
+    "desc": "Our skilled technicians are equipped to handle all types of electrical repairs, from fixing faulty wiring to replacing batteries and alternators. We use advanced diagnostic tools to identify and resolve electrical issues efficiently.",
+    "cost": "120.00",
+    "images": [
+      {
+        "id": 9,
+        "url": "https://images.pexels.com/photos/3836256/pexels-photo-3836256.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Battery Replacement"
+      },
+      {
+        "id": 10,
+        "url": "https://images.pexels.com/photos/4489760/pexels-photo-4489760.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Electrical Wiring"
+      },
+      {
+        "id": 11,
+        "url": "https://images.pexels.com/photos/4489759/pexels-photo-4489759.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Alternator Replacement"
+      },
+      {
+        "id": 12,
+        "url": "https://images.pexels.com/photos/3807369/pexels-photo-3807369.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Fuse Box Inspection"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Air Conditioning Maintenance",
+    "icon": "AC",
+    "desc": "Ensure your vehicle’s air conditioning system is working efficiently with our comprehensive maintenance services. We check for refrigerant leaks, inspect the compressor, and clean the AC system to keep you cool on the road.",
+    "cost": "90.00",
+    "images": [
+      {
+        "id": 13,
+        "url": "https://images.pexels.com/photos/6006357/pexels-photo-6006357.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "AC System Check"
+      },
+      {
+        "id": 14,
+        "url": "https://images.pexels.com/photos/6006365/pexels-photo-6006365.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Refrigerant Check"
+      },
+      {
+        "id": 15,
+        "url": "https://images.pexels.com/photos/6006370/pexels-photo-6006370.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Compressor Inspection"
+      },
+      {
+        "id": 16,
+        "url": "https://images.pexels.com/photos/6006375/pexels-photo-6006375.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "AC System Cleaning"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Air Conditioning Maintenance",
+    "icon": "AC",
+    "desc": "Ensure your vehicle’s air conditioning system is working efficiently with our comprehensive maintenance services. We check for refrigerant leaks, inspect the compressor, and clean the AC system to keep you cool on the road.",
+    "cost": "90.00",
+    "images": [
+      {
+        "id": 17,
+        "url": "https://images.pexels.com/photos/6006357/pexels-photo-6006357.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "AC System Check"
+      },
+      {
+        "id": 18,
+        "url": "https://images.pexels.com/photos/6006365/pexels-photo-6006365.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Refrigerant Check"
+      },
+      {
+        "id": 19,
+        "url": "https://images.pexels.com/photos/6006370/pexels-photo-6006370.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "Compressor Inspection"
+      },
+      {
+        "id": 20,
+        "url": "https://images.pexels.com/photos/6006375/pexels-photo-6006375.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "caption": "AC System Cleaning"
+      }
+    ]
+  }
+]

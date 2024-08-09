@@ -11,6 +11,23 @@ export class UsersService {
     @InjectRepository(User) private userRepository: Repository<User>,
   ) {}
 
+  private readonly users = [
+    {
+      userId: 1,
+      username: 'john',
+      password: 'changeme',
+    },
+    {
+      userId: 2,
+      username: 'maria',
+      password: 'guess',
+    },
+  ];
+
+  async findByUsername(username: string) {
+    return this.users.find((user) => user.username === username);
+  }
+
   async create(createUserDto: CreateUserDto) {
     const user = this.userRepository.create({
       firstName: createUserDto.firstName,
