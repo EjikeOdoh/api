@@ -20,7 +20,9 @@ export class Service {
 
   @OneToMany(() => Image, (image) => image.service, {
     cascade: true,
+    onDelete: 'CASCADE',
     eager: true,
+    nullable: true,
   })
   images: Image[];
 }

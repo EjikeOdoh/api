@@ -3,7 +3,7 @@ import { CreateServiceDto, ImageDTO } from './dto/create-service.dto';
 import { UpdateServiceDto } from './dto/update-service.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Service } from './entities/service.entity';
-import { Repository } from 'typeorm';
+import { Repository, In } from 'typeorm';
 import { Image } from './entities/image.entity';
 
 @Injectable()
@@ -19,12 +19,14 @@ export class ServicesService {
       icon: createServiceDto.icon,
       desc: createServiceDto.desc,
       cost: createServiceDto.cost,
-      images: createServiceDto.images.map((imageDto: ImageDTO) =>
-        this.imageRepository.create({
-          url: imageDto.url,
-          caption: imageDto.caption,
-        }),
-      ),
+      images:
+        createServiceDto.images &&
+        createServiceDto.images.map((imageDto: ImageDTO) =>
+          this.imageRepository.create({
+            url: imageDto.url,
+            caption: imageDto.caption,
+          }),
+        ),
     });
 
     return await this.serviceRepository.save(service);
@@ -52,6 +54,10 @@ export class ServicesService {
   }
 
   async remove(id: number) {
+    // const photos = await this.imageRepository.findBy({
+    //   : ,
+    // });
+    // console.log(photos);
     return await this.serviceRepository.delete(id);
   }
 }

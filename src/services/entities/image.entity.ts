@@ -13,6 +13,7 @@ export class Image {
   caption: string;
 
   @ManyToOne(() => Service, (service) => service.images, {
+    onDelete: 'CASCADE',
     orphanedRowAction: 'delete',
   })
   service: Service;
