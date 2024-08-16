@@ -21,14 +21,22 @@ export class UsersController {
     return this.usersService.create(createUserDto);
   }
 
+  @Post('phone')
+  async findPhone(
+    @Body() { phone, password }: { phone: string; password: string },
+  ) {
+    console.log(phone);
+    return this.usersService.findByUserPhone(phone);
+  }
+
   @Get()
-  findAll() {
-    return this.usersService.findAll();
+  async findAll() {
+    return await this.usersService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.usersService.findOne(+id);
+  async findOne(@Param('id') id: string) {
+    return await this.usersService.findOne(+id);
   }
 
   @Patch(':id')

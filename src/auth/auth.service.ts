@@ -9,8 +9,8 @@ export class AuthService {
     private jwtService: JwtService,
   ) {}
 
-  async validateUser(username: string, password: string) {
-    const user = await this.userService.findByUsername(username);
+  async validateUser(phone: string, password: string) {
+    const user = await this.userService.findByUserPhone(phone);
     if (user && user.password === password) {
       const { password, ...rest } = user;
       return rest;

@@ -11,21 +11,11 @@ export class UsersService {
     @InjectRepository(User) private userRepository: Repository<User>,
   ) {}
 
-  private readonly users = [
-    {
-      userId: 1,
-      username: 'john',
-      password: 'changeme',
-    },
-    {
-      userId: 2,
-      username: 'maria',
-      password: 'guess',
-    },
-  ];
-
-  async findByUsername(username: string) {
-    return this.users.find((user) => user.username === username);
+  async findByUserPhone(phone: string): Promise<User | undefined> {
+    const user = await this.userRepository.findOneBy({
+      phone,
+    });
+    return user;
   }
 
   async create(createUserDto: CreateUserDto) {
@@ -45,8 +35,8 @@ export class UsersService {
     return await this.userRepository.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} user`;
+  async findOne(id: number) {
+    return await this.userRepository.findOneBy({ id });
   }
 
   update(id: number, updateUserDto: UpdateUserDto) {
