@@ -12,6 +12,7 @@ import {
 import { ServicesService } from './services.service';
 import { CreateServiceDto } from './dto/create-service.dto';
 import { UpdateServiceDto } from './dto/update-service.dto';
+import { SkipAuth } from 'src/decorators/skipAuth.decorator';
 
 @Controller('services')
 export class ServicesController {
@@ -22,6 +23,7 @@ export class ServicesController {
     return this.servicesService.create(createServiceDto);
   }
 
+  @SkipAuth()
   @Get()
   findAll() {
     return this.servicesService.findAll();

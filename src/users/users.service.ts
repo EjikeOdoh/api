@@ -36,7 +36,9 @@ export class UsersService {
   }
 
   async findOne(id: number) {
-    return await this.userRepository.findOneBy({ id });
+    const user = await this.userRepository.findOneBy({ id });
+    const { password, ...result } = user;
+    return result;
   }
 
   update(id: number, updateUserDto: UpdateUserDto) {
